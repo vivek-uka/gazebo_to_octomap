@@ -3,6 +3,7 @@
        Use gui:=true on roslaunch command-line to run with a gui.
   -->
   <arg name="gui" default="true"/>
+  <env name="GAZEBO_PLUGIN_PATH" value="$(find gazebo_to_octomap)/plugins"/>
   <env name="GAZEBO_MODEL_PATH" value="${GAZEBO_MODEL_PATH}:$(find gazebo_to_octomap)/models/room_with_walls_2/"/>
   <env name="GAZEBO_RESOURCE_PATH" value="${GAZEBO_RESOURCE_PATH}:$(find gazebo_to_octomap)/models/room_with_walls_2/"/>
   <include file="$(find gazebo_ros)/launch/empty_world.launch">

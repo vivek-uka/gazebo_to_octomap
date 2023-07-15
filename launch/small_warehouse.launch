@@ -5,7 +5,7 @@
   <arg name="gui" default="true"/>
   <env name="GAZEBO_MODEL_PATH" value="${GAZEBO_MODEL_PATH}:$(find gazebo_to_octomap)/models"/>
   <env name="GAZEBO_RESOURCE_PATH" value="${GAZEBO_RESOURCE_PATH}:$(find gazebo_to_octomap)/models"/>
-
+  <env name="GAZEBO_PLUGIN_PATH" value="$(find gazebo_to_octomap)/plugins"/>
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(find gazebo_to_octomap)/worlds/small_warehouse.world"/>
     <arg name="paused" default="false"/>

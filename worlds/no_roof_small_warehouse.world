@@ -9,8 +9,8 @@
       <real_time_update_rate>1000</real_time_update_rate>
     </physics>
 
-    <plugin name='ros_interface_plugin' filename='librotors_gazebo_ros_interface_plugin.so'/>
-    <plugin name='gazebo_octomap' filename='librotors_gazebo_octomap_plugin.so'/>
+    <plugin name='ros_interface_plugin' filename='gazebo_ros_interface_plugin.so'/>
+    <plugin name='gazebo_octomap' filename='gazebo_to_octomap_plugin.so'/>
         <!--model name="aws_robomaker_warehouse_RoofB_01_001">
         <include>
             <uri>model://aws_robomaker_warehouse_RoofB_01</uri>
